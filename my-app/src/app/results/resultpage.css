@@ -1,0 +1,120 @@
+.result_page_heading {
+    font-size: 70px;
+    font-weight: 700;
+    color: #000000;
+    line-height: 70px;
+    margin-bottom: 63px;
+    margin-left: 98px;
+}
+
+.dr_name {
+    color: #7D7D82;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: normal;
+}
+
+.dr_rating_widget {
+    display: flex;
+    gap: 45px;
+    align-items: center;
+    justify-content: center;
+    background-color: #0F152B;
+    color: white;
+    border-radius: 16px;
+    padding: 12px 10px;
+    width: 245px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.dr_rating_widget .rate-label {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.dr_rating_widget .rating-score {
+    display: flex;
+    align-items: baseline;
+    margin: 0;
+}
+
+.dr_rating_widget .rating-number {
+    font-size: 68px;
+    /* font-weight: bold; */
+    line-height: 1;
+    margin-right: 5px;
+}
+
+.dr_rating_widget .rating-total {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1;
+    color: #fff;
+}
+
+.years_practice_widget {
+    background-color: #ADD8FF;
+    color: #0F152B;
+    border-radius: 16px;
+    padding: 12px 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.operations_widget {
+    background-color: #F5F6DA;
+    color: #0F152B;
+    border-radius: 16px;
+    padding: 12px 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.practice-label,
+.operations-label {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+    margin: 0;
+    color: #0F152B;
+}
+
+.practice-score,
+.operations-score {
+    display: flex;
+    align-items: baseline;
+    margin: 5px;
+}
+
+.practice-number,
+.operations-number {
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 1;
+    margin-left: 20px;
+    margin-top: 10px;
+    color: #0F152B;
+}
+
+.comments {
+    color: #7D7D82;
+    font-size: 8px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 12px;
+    margin-top: 20px;
+}
+
+/*card_info_heading*/
+.card_info_heading {
+    color: #0A397E;
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 26px;
+}
+
+.card_info_form label {
+    color: #476A9E !important;
+    font-size: 17px;
+    line-height: 21px;
+}

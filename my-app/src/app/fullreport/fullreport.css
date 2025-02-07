@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #F5F6DA;
+    padding: 20px 0;
+}
+
+.header,
+.name {
+    font-size: 76px;
+    font-weight: 700;
+    color: #0F152B;
+}
+
+.header,
+.specialty {
+    font-size: 39px;
+    font-weight: 500;
+    color: #0F152B;
+    margin-bottom: 50px;
+}
+
+.click_name {
+    margin: 50px 0;
+    color: #0F152B;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.dr_rating_widget {
+    display: flex;
+    gap: 45px;
+    align-items: center;
+    justify-content: center;
+    background-color: #0F152B;
+    color: white;
+    border-radius: 16px;
+    padding: 12px 10px;
+    width: 245px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.dr_rating_widget .rate-label {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.dr_rating_widget .rating-score {
+    display: flex;
+    align-items: baseline;
+    margin: 0;
+}
+
+.dr_rating_widget .rating-number {
+    font-size: 68px;
+    /* font-weight: bold; */
+    line-height: 1;
+    margin-right: 5px;
+}
+
+.dr_rating_widget .rating-total {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1;
+    color: #fff;
+}
+
+.fullresultpg_headings {
+    font-size: 41px;
+    font-weight: 700;
+    color: #0F152B;
+}
+
+.service {
+    margin-top: 20px;
+    background-color: #F5F6DA;
+    padding: 8px 20px;
+    width: 390px;
+    border-radius: 12px;
+}
+
+.service,
+.title {
+    font-size: 27px;
+    font-weight: 600;
+    color: #0F152B;
+}
+
+.service,
+.text {
+    font-size: 18px;
+    color: #0F152B;
+    text-align: center;
+    line-height: 21px;
+    margin-top: 20px;
+    width: 370px;
+    font-weight: 500;
+}
+
+
+.testimonials_card {
+    background-color: #fff;
+    box-shadow: 0 2px 18px 0 rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.testimonials_card img {
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    border: 2px solid #C4C4C4;
+}
+
+.footer-heading {
+    color: #0F152B;
+    font-size: 40px;
+    font-weight: 700;
+}
