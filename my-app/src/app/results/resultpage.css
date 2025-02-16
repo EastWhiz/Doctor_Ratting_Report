@@ -118,3 +118,52 @@
     font-size: 17px;
     line-height: 21px;
 }
+
+@media screen and (max-width: 768px) {
+  .result_page_heading {
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 30px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .dr_name {
+    font-size: 18px;
+  }
+
+  .dr_rating_widget {
+    width: 100%;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .dr_rating_widget .rate-label {
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+  .dr_rating_widget .rating-number {
+    font-size: 40px;
+  }
+
+  .dr_rating_widget .rating-total {
+    font-size: 20px;
+  }
+
+  .years_practice_widget,
+  .operations_widget {
+    padding: 10px;
+  }
+
+  .practice-number,
+  .operations-number {
+    font-size: 24px;
+    margin-left: 10px;
+  }
+
+  .comments {
+    font-size: 10px;
+    line-height: 14px;
+  }
+}
