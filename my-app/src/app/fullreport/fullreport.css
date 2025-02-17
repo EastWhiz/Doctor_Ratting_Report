@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .header {
@@ -8,38 +9,37 @@
     padding: 20px 0;
 }
 
-.header,
 .name {
-    font-size: 76px;
+    font-size: 48px;
     font-weight: 700;
     color: #0F152B;
 }
 
-.header,
 .specialty {
-    font-size: 39px;
+    font-size: 24px;
     font-weight: 500;
     color: #0F152B;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .click_name {
-    margin: 50px 0;
+    margin: 30px 0;
     color: #0F152B;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 500;
 }
 
 .dr_rating_widget {
     display: flex;
-    gap: 45px;
+    gap: 20px;
     align-items: center;
     justify-content: center;
     background-color: #0F152B;
     color: white;
     border-radius: 16px;
     padding: 12px 10px;
-    width: 245px;
+    width: 100%;
+    max-width: 245px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
 
@@ -47,7 +47,7 @@
     font-size: 12px;
     line-height: 16px;
     font-weight: 500;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .dr_rating_widget .rating-score {
@@ -57,21 +57,20 @@
 }
 
 .dr_rating_widget .rating-number {
-    font-size: 68px;
-    /* font-weight: bold; */
+    font-size: 48px;
     line-height: 1;
     margin-right: 5px;
 }
 
 .dr_rating_widget .rating-total {
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 400;
     line-height: 1;
     color: #fff;
 }
 
 .fullresultpg_headings {
-    font-size: 41px;
+    font-size: 32px;
     font-weight: 700;
     color: #0F152B;
 }
@@ -80,28 +79,26 @@
     margin-top: 20px;
     background-color: #F5F6DA;
     padding: 8px 20px;
-    width: 390px;
+    width: 100%;
+    max-width: 390px;
     border-radius: 12px;
 }
 
-.service,
-.title {
-    font-size: 27px;
+.service .title {
+    font-size: 20px;
     font-weight: 600;
     color: #0F152B;
 }
 
-.service,
-.text {
-    font-size: 18px;
+.service .text {
+    font-size: 16px;
     color: #0F152B;
     text-align: center;
     line-height: 21px;
     margin-top: 20px;
-    width: 370px;
+    width: 100%;
     font-weight: 500;
 }
-
 
 .testimonials_card {
     background-color: #fff;
@@ -119,6 +116,66 @@
 
 .footer-heading {
     color: #0F152B;
-    font-size: 40px;
+    font-size: 32px;
     font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .name {
+        font-size: 36px;
+    }
+
+    .specialty {
+        font-size: 20px;
+    }
+
+    .click_name {
+        font-size: 18px;
+    }
+
+    .fullresultpg_headings {
+        font-size: 28px;
+    }
+
+    .service .title {
+        font-size: 18px;
+    }
+
+    .service .text {
+        font-size: 14px;
+    }
+
+    .footer-heading {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .name {
+        font-size: 28px;
+    }
+
+    .specialty {
+        font-size: 18px;
+    }
+
+    .click_name {
+        font-size: 16px;
+    }
+
+    .fullresultpg_headings {
+        font-size: 24px;
+    }
+
+    .service .title {
+        font-size: 16px;
+    }
+
+    .service .text {
+        font-size: 12px;
+    }
+
+    .footer-heading {
+        font-size: 24px;
+    }
 }
