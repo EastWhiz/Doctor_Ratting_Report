@@ -1,3 +1,54 @@
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 80px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  position: relative;
+  transform: rotate(45deg);
+  background: conic-gradient(from 0deg, #FFF, #69B8FF, #fff);
+  animation: spin 1.8s linear infinite;
+}
+
+.loader::before {
+  content: "";
+  position: absolute;
+  inset: 15px;
+  border-radius: 50%;
+  background: #e5eefb; 
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.text_animation {
+  font-family: monospace;
+  font-weight: 500;
+  font-size: 20px;
+  width: fit-content;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: floatUp 1s ease-out forwards;
+}
+.text_animation TiTick{
+  font-size: 40px;
+}
+
+@keyframes floatUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
 .result_page_heading {
     font-size: 70px;
     font-weight: 700;
@@ -165,5 +216,12 @@
   .comments {
     font-size: 10px;
     line-height: 14px;
+  }
+}
+
+@media screen and (max-width:375px) {
+  .result_page_heading{
+   font-size: 30px;
+   line-height: 35px; 
   }
 }

@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import DebitCardForm from "@/components/cardinfo/page";
 import "./resultpage.css";
-
+import { TiTick } from "react-icons/ti";
 export default function Results() {
   const [doctorInfo] = useState({
     name: "Dr. John Doe",
@@ -31,20 +31,25 @@ export default function Results() {
       <div className="container mx-auto px-4">
         {loading ? (
           <div className="flex flex-col items-center justify-center space-y-4">
-            <div className="animate-spin rounded-full border-4 border-t-4 border-blue-500 w-16 h-16 mb-4"></div>
-            <p className="text-lg text-gray-700 animate-[float-up_2s_ease-in-out_infinite]">
-              Progressing...
-            </p>
+            <div className="loader"></div>
             <ul className="text-sm text-gray-600 space-y-2 mt-4">
-              <li>Loading your report data...</li>
-              <li>Fetching doctor information...</li>
-              <li>Preparing your debit card form...</li>
-              <li>Almost there...</li>
-            </ul>
+                <li className="text_animation" style={{ animationDelay: "0s" }}>
+                  <TiTick className="inline" />Loading your report data
+                </li>
+                <li className="text_animation" style={{ animationDelay: "0.8s" }}>
+                  <TiTick className="inline" />Fetching doctor information
+                </li>
+                <li className="text_animation" style={{ animationDelay: "1.5s" }}>
+                <TiTick className="inline" /> Preparing your debit card form
+                </li>
+                <li className="text_animation" style={{ animationDelay: "2.5s" }}>
+                  <TiTick className="inline" />Almost there
+                </li>
+              </ul>
           </div>
         ) : (
           <div>
-            <h1 className="result_page_heading text-4xl md:text-7xl font-bold text-center mb-8 md:mb-16">
+            <h1 className="result_page_heading text-4xl md:text-7xl font-bold mb-8 md:mb-16">
               Get a full report on <br />
               Dr. John Doe
             </h1>
